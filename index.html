@@ -12,7 +12,7 @@
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="./node_modules/devicons/css/devicons.min.css" rel="stylesheet">
+
 
   <!-- Custom fonts for this template -->
   <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -89,7 +89,7 @@
       <div class="row">
         <div class="col-lg-12 text-center ">
           <div class="col-sm-4 cardProperties" text-center>
-            <div id="services" class="team-member">
+            <div id="services" class="my-team-member">
               <img class="mx-auto rounded-circle" src="img/team/1.jpg" alt="">
               <h4>Khushaan Soni</h4>
               <p class="text-muted">Senior Software Designer</p>
@@ -112,11 +112,11 @@
               </ul>
             </div>
           </div>
-          <h2 class="section-heading text-uppercase">What I Am !</h2>
+          <h2 class="section-heading text-uppercase" style="    margin-top: 50px;">What I Am !</h2>
           <h3 class="section-subheading text-muted"></h3>
         </div>
       </div>
-      <div class="row text-center">
+      <div class="row text-center introductionProperties">
         <div class="col-md-4">
           <span class="fa-stack fa-4x">
             <i class="fa fa-circle fa-stack-2x text-primary"></i>
@@ -159,7 +159,7 @@
           <h3 class="section-subheading text-muted">What I can be of use to you !</h3>
 
           <div id="myCanvasContainer">
-              <canvas width="300" height="300" id="myCanvas">
+              <canvas width="500" height="300" id="myCanvas" style="width: 100%">
                 <p>Anything in here will be replaced on browsers that support the canvas element</p>
               </canvas>
             </div>
@@ -311,7 +311,7 @@
   </section>
 
   <!-- About -->
-  <section id="about">
+  <section id="about" style="    background: black;">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
@@ -393,12 +393,12 @@
   </section>
 
   <!-- Team -->
-  <section class="bg-light" id="team">
+  <section class="bg-light" id="team" style="    background: black !important;">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
-          <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+          <h2 class="section-heading text-uppercase">Recommendations</h2>
+          <h3 class="section-subheading text-muted">My Life Earning , My Blessings</h3>
         </div>
       </div>
       <div class="row">
@@ -424,6 +424,7 @@
                 </a>
               </li>
             </ul>
+            <p class="text-muted">"Lead Designer is very hard working bla bla bal bal Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde."</p>
           </div>
         </div>
         <div class="col-sm-4">
@@ -448,6 +449,9 @@
                 </a>
               </li>
             </ul>
+            <p class="text-muted">"Lead Designer is very hard working bla bla bal bal Lorem
+               ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam 
+               veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde."</p>
           </div>
         </div>
         <div class="col-sm-4">
@@ -472,20 +476,23 @@
                 </a>
               </li>
             </ul>
+            <p class="text-muted">"Lead Designer is very hard working bla bla bal bal Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque
+                , laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde."</p>
           </div>
+    
         </div>
       </div>
-      <div class="row">
+      <!-- <div class="row">
         <div class="col-lg-8 mx-auto text-center">
           <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis,
             totam corporis ea, alias ut unde.</p>
         </div>
-      </div>
+      </div> -->
     </div>
   </section>
 
   <!-- Clients -->
-  <section class="py-5">
+  <!-- <section class="py-5">
     <div class="container">
       <div class="row">
         <div class="col-md-3 col-sm-6">
@@ -510,7 +517,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- Contact -->
   <section id="contact">
@@ -819,7 +826,7 @@
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  <script src="./node_modules/particles.js/particles.js"></script>
+  <script src="js/particles.min.js"></script>
   <script src="vendor/tagcanvas.js" type="text/javascript"></script>
 
   <!-- Plugin JavaScript -->
@@ -847,8 +854,17 @@
             depth: 0.8,
             maxSpeed: 0.05,
             freezeActive:true,
-            minSpeed:10 ,
-            initial:[0.2,0.22]
+            minSpeed:1 ,
+            initial:[0.2,0.22],
+            shape: 'vcylinder',
+            pinchZoom:false,
+            wheelZoom:false
+           //outlineIncrease:4,
+           // outlineMethod: "outline",
+         //   radiusX:5,
+          //  radiusY:5
+         // stretchX:5,
+          //stretchY:5
           });
         } catch(e) {
           // something went wrong, hide the canvas container

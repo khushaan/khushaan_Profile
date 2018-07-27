@@ -172,7 +172,8 @@ img::-moz-selection {
 header.masthead {
   text-align: center;
   color: white;
-  background-image: url("../img/header-bg.jpg");
+  /* background-image: url("../img/header-bg.jpg"); */
+  background: black;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -180,6 +181,29 @@ header.masthead {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+.sectionProperties{
+
+  background: black;
+}
+.cardProperties{
+  background: #fbd249;
+  padding: 20px;
+
+  margin: 0 auto;
+  float: none;
+  box-shadow: 0px 0px 15px 5px rgb(142, 142, 142);
+
+}
+
+
+.myTittle {
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 
 header.masthead .intro-text {
